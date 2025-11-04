@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Login</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-blue-200 flex items-center justify-center h-screen">
+  <div class="bg-indigo-500 shadow-lg rounded-xl p-8 w-full max-w-md">
+    <h2 class="text-2xl font-bold text-center mb-6 text-white">Teacher Login</h2>
+    <form id="loginForm" class="space-y-4" action="login.php" method="post">
+      <div>
+        <label for="email" class="block text-sm font-medium text-white">Email</label>
+        <input type="email" id="email" name="email" required class="mt-1 block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-white">Password</label>
+        <input type="password" id="password" name="password" required class="mt-1 block w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500">
+      </div>
+      <div>
+        <button type="submit" class="w-full bg-blue-600 text-white font-semibold py-2 rounded-lg hover:bg-blue-700">Login</button>
+      </div>
+    </form>
+    <p id="error-msg" class="text-red-500 text-sm mt-4 hidden text-center">Invalid email or password</p>
+  </div>
+
+  <script>
+ 
+  </script>
+</body>
+</html>
